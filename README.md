@@ -1,7 +1,7 @@
 # Dockers
 **Security tools in containers**
 
-I use this together with my .Dotters where I have a bunch of aliases for most of the containers that I use on a daily basis.
+I prefer using all of these containers with aliases for optimized work flow.
 
 Usage examples are most of the time in the folder for the specific tool, otherwise refer to the tools help pages.
 
@@ -21,3 +21,8 @@ alias dex2jar='docker run --rm -it -v `pwd`:/tmp dex2jar'
 alias hakrawler='docker run -i hakrawler'
 alias assetfinder='docker run -i assetfinder'
 alias kxss='docker run -i kxss'
+
+# Using multiple tools together
+For example you can use `assetfinder`, `hakrawler` and `kxss` together if you do the following and have the aliases configured as above.
+```assetfinder https://xss-game.appspot.com/ | hakrawler -depth 2 -plain | kxss```
+This works because the aliases are instructing the containers to run with `-i` which is interactive flag and supports stdin.
