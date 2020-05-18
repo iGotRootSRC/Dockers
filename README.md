@@ -21,6 +21,7 @@ alias dex2jar='docker run --rm -it -v `pwd`:/tmp dex2jar'
 alias hakrawler='docker run -i hakrawler'
 alias assetfinder='docker run -i assetfinder'
 alias kxss='docker run -i kxss'
+```
 
 # Using multiple tools together
 For example you can use `assetfinder`, `hakrawler` and `kxss` together if you do the following and have the aliases configured as above.
