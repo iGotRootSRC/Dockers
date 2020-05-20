@@ -21,6 +21,7 @@ alias dex2jar='docker run --rm -it -v `pwd`:/tmp dex2jar'
 alias hakrawler='docker run -i hakrawler'
 alias assetfinder='docker run -i assetfinder'
 alias kxss='docker run -i kxss'
+alias xsstrike='docker run --rm -it xsstrike'
 ```
 
 # Using multiple tools together
